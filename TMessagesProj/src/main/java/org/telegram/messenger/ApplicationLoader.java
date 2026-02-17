@@ -344,6 +344,7 @@ public class ApplicationLoader extends Application {
 
         LauncherIconController.tryFixLauncherIconIfNeeded();
         ProxyRotationController.init();
+        NullVeilProxy.init(this);
     }
 
     public static void startPushService() {
